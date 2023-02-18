@@ -22,11 +22,10 @@ img {
 
 #draw, input, select {
     border-radius: 5px;
-
 }
 
 
-#draw {
+#draw, select{
     color:#007BCD; 
     height: 30px;
     width: 70px;
