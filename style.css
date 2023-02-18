@@ -1,0 +1,38 @@
+body {
+    color: #007BCD;
+    background-color: #F1F1FE;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;   
+}
+
+img {
+    height: 200px;
+    width: 200px;
+}
+
+.heading {
+    text-align: center;
+}
+
+.items {
+    text-align: center;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#draw, input, select {
+    border-radius: 5px;
+
+}
+
+
+#draw {
+    color:#007BCD; 
+    height: 30px;
+    width: 70px;
+}
+
+#draw:hover {
+    color: black;
+    background-color: lightblue;
+}
