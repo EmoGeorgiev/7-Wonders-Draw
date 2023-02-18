@@ -1,10 +1,11 @@
-const images = ['./Images/Alexandria.jpg',
-                './Images/Babylon.jpg',
-                './Images/Ephesos.jpg',
-                './Images/Giza.jpg',
-                './Images/Halicarnassus.jpg',
-                './Images/Olympia.jpg',
-                './Images/Rhodes.jpg'
+const images = [
+        './Images/Alexandria.jpg',
+        './Images/Babylon.jpg',
+        './Images/Ephesos.jpg',
+        './Images/Giza.jpg',
+        './Images/Halicarnassus.jpg',
+        './Images/Olympia.jpg',
+        './Images/Rhodes.jpg'
 ];
 
 let names = [];
@@ -63,13 +64,14 @@ draw.addEventListener('click', () => {
         th.innerHTML = names[i];
         playerDraw.appendChild(th);
     }
-    shuffle(images);
+    const boards = [0, 1, 2, 3, 4, 5, 6];
+    shuffle(boards);
 
     const tr = document.createElement('tr');
     for (let i = 0; i < count; i++) {
         const td = document.createElement('td');
         const img = document.createElement('img');
-        img.src = images[i];
+        img.src = images[boards[i]];
         td.appendChild(img);
         tr.appendChild(td);
         playerDraw.appendChild(tr);
