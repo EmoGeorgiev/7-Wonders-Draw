@@ -18,7 +18,7 @@ const playerDraw = document.getElementById('player-draw');
 
 function shuffle(arr) {
     for (let i = arr.length - 1; i >= 0; i--) {
-        let index = Math.floor(Math.random() * arr.length);
+        let index = Math.floor(Math.random() * i);
         
         let temp = arr[i];
         arr[i] = arr[index];
